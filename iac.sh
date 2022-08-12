@@ -104,14 +104,14 @@ createall(){
 
 
 echo 
-echo ":: Create ou delete struct directory, users and group ::"
+echo ":: Create or delete struct: directories, users and groups ::"
 echo
 PS3="Inform an option: "
-select option in criar deletar
+select option in create delete
 do
     case $option in
-    criar) createall;;
-    deletar) deleteall;;
+    create) createall;;
+    delete) deleteall;;
     *) echo "Invalid option";;
     esac
     break;
